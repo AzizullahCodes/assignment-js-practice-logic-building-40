@@ -244,16 +244,44 @@ _________________________ Answer ____________________________*/
 
 // }
 
-/*_______________________ Question no 1 ______________________
+/*_______________________ Question no 13 ______________________
 
 _________________________ Answer ____________________________*/
+// function saveData(){let get = document.getElementById('userinput').value;
+//     let getFromStorage = localStorage.getItem('task');
+//     if(getFromStorage === null){createObject = []}
+//     else{createObject = JSON.parse(getFromStorage)}
+//     createObject.push(get);
+//     let str = JSON.stringify(createObject);
+//     localStorage.setItem('task',str);
+//     document.getElementById('userinput').value = '';
+//     // show data 
+//     let result = '';
+//     for(let i = 0; i< createObject.length; i ++){result += createObject[i]+'<br>'}
+//     document.getElementById('display').innerHTML = result;
+
+// }
 
 
+/*_______________________ Question no 14 ______________________
+Save and Show Names
+Question:
+Create a form where the user can enter a name. When the user clicks "Save", the name should
+ be stored in localStorage (as part of an array) and displayed on the screen.
 
-/*_______________________ Question no 1 ______________________
+Expected Output:
+Each time a name is entered and saved, the updated list of all saved names should be shown below:
 
+Ali
+Ahmed
+Sara
 _________________________ Answer ____________________________*/
+ function saveData(){let get = document.getElementById('userinput').value;
+    let getFromStorage = localStorage.getItem('stored');
+    if(getFromStorage === null){createObjet = []}
+    else{}
 
+}
 
 /*_______________________ Question no 1 ______________________
 
