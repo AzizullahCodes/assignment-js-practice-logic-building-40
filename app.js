@@ -780,138 +780,76 @@ _________________________ Answer ____________________________*/
 // console.log(colors);
 // console.log(a);
 
-/*_______________________ Question no 1 ______________________
-
+/*_______________________ Question no 45 ______________________
+First and Last Position of Character
+Question:
+You have the string: "javascript is a scripting language"
+Find the first and last position of the letter "i".
+Required Output:
+First index of 'i': 4  
+Last index of 'i': 26
+_________________________ Answer ____________________________*/
+// let string = 'Javascript is a scripting language';
+// let first = string.indexOf('i');
+// console.log(first);
+// let last = string.lastIndexOf('i');
+// console.log(last);
+/*_______________________ Question no 46 ______________________
+Check Word Position
+Question:
+You have the string: "Learn JavaScript and then learn React"
+Find the first and last index of the word "learn" (case-insensitive).
+Required Output:
+First index of 'learn': 0  
+Last index of 'learn': 28
+_________________________ Answer ____________________________*/
+// let string = "Learn JavaScript and then learn React";
+// let first = string.indexOf('Learn');
+// console.log(first);
+// let last = string.lastIndexOf('learn');
+// console.log(last);
+/*_______________________ Question no 47 ______________________
+Reverse a Word
+Question:
+Reverse the word "Frontend".
+Expected Output:
+dnetnorF
+_________________________ Answer ____________________________*/
+// let string = 'Frontend';
+// let reversed = '';
+// for(let i = string.length-1; i>=0;i--){reversed = reversed + string[i];}
+// console.log(reversed);
+/*_______________________ Question no 48 ______________________
+ reverse string by for loop
 _________________________ Answer ____________________________*/
 
-
-
-
-/*_______________________ Question no 1 ______________________
-
+// let string = 'I love js';
+// let reversed = '';
+// for(let i = string.length-1; i >=0;i--){reversed = reversed + string[i];}
+// console.log(reversed);
+/*_______________________ Question no 49 ______________________
+Reverse an Array
+Question:
+Reverse the array [10, 20, 30, 40, 50].
+Expected Output:
+[50, 40, 30, 20, 10]
+_________________________ Answer ____________________________*/
+ let array = [10,20,30,40,50];
+let reversedArray = [];
+ for(let i = array.length-1;i >=0;i--){reversedArray.push(array[i])};
+console.log(reversedArray);
+ 
+/*_______________________ Question no 50 ______________________
+ Reverse Digits of a Number
+Question:
+Given the number 54321, reverse its digits.
+Expected Output:
+12345
 _________________________ Answer ____________________________*/
 
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/ 
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
+ let number = 54321;
+  let str = String(number);
+  console.log(str,typeof str);
+ let revered = '';
+for(let i = str.length-1; i>=0;i--){revered = revered + str[i]}
+ console.log(revered);
