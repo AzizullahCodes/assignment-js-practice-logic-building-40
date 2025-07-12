@@ -276,70 +276,180 @@ Ali
 Ahmed
 Sara
 _________________________ Answer ____________________________*/
- function saveData(){let get = document.getElementById('userinput').value;
-    let getFromStorage = localStorage.getItem('stored');
-    if(getFromStorage === null){createObjet = []}
-    else{}
+//  function saveData(){let get = document.getElementById('userinput').value;
+//     let getFromStorage = localStorage.getItem('stored');
+//     if(getFromStorage === null){createObjet = []}
+//     else{createObjet = JSON.parse(getFromStorage)}
+// createObjet.push(get);
+// let convertstring = JSON.stringify(createObjet);
+// localStorage.setItem('stored',convertstring);
+// document.getElementById('userinput').value = '';
 
-}
+// let result = '';
+// for(let i = 0; i < createObjet.length; i++){result = result + createObjet[i]+'<br>';}
+// document.getElementById('display').innerHTML = result;
+// }
 
-/*_______________________ Question no 1 ______________________
+/*_______________________ Question no 15 ______________________
+: Display Price with 2 Decimal Places
+Question:
+You have a price: let price = 99.45678;
+Display it on the browser with 2 decimal places.
 
+Expected Output:
+Price: 99.46
 _________________________ Answer ____________________________*/ 
+// let price = 99.45678;
+// let result = price.toFixed(2);
+// console.log(result);
 
 
+/*_______________________ Question no 16 ______________________
+ Calculate the Circumference of a Circle
+Question:
+Ask the user to enter the radius. Use Math.PI to calculate and show the circumference.
 
-/*_______________________ Question no 1 ______________________
+Formula:
+Circumference = 2 * π * r
+
+Expected Output Example:
+If user enters 7, output should be:
+The circumference of the circle is: 43.982297150257104
+________________________ Answer ____________________________*/
+// let radius = 7;
+// let circumference = 2 * Math.PI * radius;
+//     circumference = circumference.toFixed(2);
+// console.log(circumference);
+
+/*_______________________ Question no 17 ______________________
+convert string data to number and number to string
+_________________________ Answer ____________________________*/
+// let num = '12.786';
+// console.log(num,typeof num);
+// let result = parseFloat(num)
+// console.log(result, typeof result);
+
+// let num = 232;
+// console.log(num, typeof num);
+// let str = num + '';
+// console.log(str, typeof str);
+
+
+/*_______________________ Question no 18 ______________________
+ Middle Character
+Question:
+From the string "Coding", print the middle character using .charAt()
+_________________________ Answer ____________________________*/
+// let str = 'coding';
+// let ind = str.indexOf('d');
+// console.log(ind);
+// let result = str.charAt(2);
+// console.log(result);
+// let last = str.charAt(str.length-1);
+// console.log(last)
+// let n = str[4];
+// console.log(n)
+/*_______________________ Question no 19 ______________________
+
+Given the string "HeLLo", write code to convert each letter to the opposite 
+case using .toUpperCase() and .toLowerCase().
+
+Expected Output:
+hEllO
+_________________________ Answer ____________________________*/
+// let string = 'HeLo';
+// let toggled = '';
+// for(let i = 0; i < string.length ; i++){let char = string.charAt(i);
+//     // check if character is in uppercase 
+//     if(char === char.toUpperCase()){toggled = toggled + char.toLowerCase()}
+//     else{toggled = toggled+ char.toUpperCase()}
+// }
+// console.log(toggled)
+
+/*_______________________ Question no 19 ______________________
+Toggle Case and Count Upper/Lower
+Question:
+Given the string "WeBDeV", toggle the case of each character and also count how many uppercase 
+and lowercase letters are there in the original string.
+Expected Output:
+Original: WeBDeV  
+Toggled: wEb dEv  
+Uppercase Letters: 4  
+Lowercase Letters: 2
+_________________________ Answer ____________________________*/
+// let string = 'WeBDeV';
+// let result = '';
+// for(let i = 0; i < string.length; i++){let get = string[i];
+//     if(get === get.toUpperCase() ){result = result + get.toLowerCase()}
+//     else{result = result + get.toUpperCase()}
+// }
+
+// console.log(result);
+// let count = 0;
+// for(let i = 0; i < string.length ; i++){let get = string.charAt(i);
+//     if(get === get.toUpperCase() && get !== get.toLowerCase()){
+//         count++;
+//     }
+//     else{console.log(count)}
+// }
+// let string = 'WeBDeV';
+// let uppercount = 0;
+// let lowercount = 0;
+// let result = '';
+// for(let i = 0; i < string.length; i++){let char = string.charAt(i);
+//     if(char === char.toUpperCase() && char !== char.toLowerCase()){result = result + char.toLowerCase();
+//         uppercount++;
+//     }
+//     else if(char === char.toLowerCase() && char !== char.toUpperCase()){result = result + char.toUpperCase();
+//         lowercount++
+//     }
+//     else{result = result + char;
+//     }
+// }
+// console.log(result)
+// console.log(uppercount);
+// console.log(lowercount)
+
+/*_______________________ Question no 20 ______________________
+convet lower to upper and upper to lower and find length of lower and upper 
+_________________________ Answer ____________________________*/
+// let string = 'AziZullaH';
+// let result = '';
+// let upperletter = 0;
+// let lowerletter = 0;
+// let nonalphabet = 0;
+// for(let i = 0; i < string.length; i++){let character = string.charAt(i);
+//     if(character === character.toLowerCase() && character !== character.toUpperCase()){result += character.toUpperCase();
+//         upperletter++;
+//     }
+//     else if(character === character.toUpperCase() && character !== character.toLowerCase()){result += character.toLowerCase();
+//         lowerletter++;
+//     }
+//     else{result = result +character;
+//         nonalphabet++;
+//     }
+// }
+// console.log(result);
+// console.log(upperletter);
+// console.log(lowerletter);
+// console.log(nonalphabet)
+
+
+/*_______________________ Question no 21 ______________________
 
 _________________________ Answer ____________________________*/
 
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
+// let string = 'AZIZ';
+// let uppercase = 0;
+// let lowercase = 0;
+// for(let i = 0; i <string.length; i++)
+// {let char = string.charAt(i);
+//    if(char === char.toUpperCase()){uppercase = uppercase + (char.toUpperCase().length);}
+//    else if(char === char.toLowerCase()){lowercase = lowercase + (char.toLowerCase().length)}
+//    else{console.log('no')}
+// }
+// console.log(uppercase);
+// console.log(lowercase)
 /*_______________________ Question no 1 ______________________
 
 _________________________ Answer ____________________________*/
