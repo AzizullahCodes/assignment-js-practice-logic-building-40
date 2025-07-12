@@ -572,119 +572,213 @@ _________________________ Answer ____________________________*/
 // console.log(Password)
 
 
-/*_______________________ Question no 1 ______________________
-
+/*_______________________ Question no 29 ______________________
+ Multiplication Table (1 to 5)
+Question:
+Use nested for loops to print the multiplication table from 1 to 5.
+Expected Output:
+1 x 1 = 1
+1 x 2 = 2
+...
+5 x 10 = 50
 _________________________ Answer ____________________________*/
 
+// for(let i = 1 ; i<=5; i++){
+//     for(let j = 1; j <=10;j++){console.log(`${i} * ${j} = ${i*j}`)}
+//     console.log('...........')
+// }
 
+/*_______________________ Question no 30 ______________________
+Star Pyramid
+Question:
+Use nested for loops to print the following pattern of stars:
+(5 rows)
 
+Expected Output:
 
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-
-/*_______________________ Question no 1 ______________________
+*
+* *
+* * *
+* * * *
+* * * * *
 
 _________________________ Answer ____________________________*/
+// let pattern = '*';
+// for(let i = 1 ; i<=5 ;i++){let star = '';
+//     for(let j = 1; j<=i;j++)
+// {star = star + '*'}
+//     console.log(star)
+// }
 
+/*_______________________ Question no 31 ______________________
+nverted Star Pyramid
+Question:
+Use nested loops to print this pattern in reverse order (5 rows):
 
+Expected Output:
 
-
-/*_______________________ Question no 1 ______________________
-
+markdown
+Copy
+Edit
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
 _________________________ Answer ____________________________*/
+// for(let i = 50; i >=0; i--){let star = '';
+//     for(let j= 1; j <= i;j++){star = star + '*'}
+//     console.log(star)
+// }
 
-
-
-
-/*_______________________ Question no 1 ______________________
-
+/*_______________________ Question no 32 ______________________
+ 4: Number Triangle
+Question:
+Use nested loops to print numbers in a triangle pattern (5 rows):
+Expected Output:
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5 
 _________________________ Answer ____________________________*/
+// for(let i = 1 ; i <=5; i++){let line = '';
+//     for(let j = 1; j<=i;j++){line = line + j + ' ';}
+//     console.log(line)
+// }
 
+/*_______________________ Question no 33 ______________________
+ Repeated Row Numbers
+Question:
+Print a pattern where each row repeats the same number (5 rows):
 
+Expected Output:
 
-
-/*_______________________ Question no 1 ______________________
-
+1 
+2 2 
+3 3 3 
+4 4 4 4 
+5 5 5 5 5 
 _________________________ Answer ____________________________*/
+// for(let i = 1; i <=5; i++){let line = '';
+//     for(let j = 1;j <=i; j++)
+// {line = line + i + ' '}
+// console.log(line)}
 
-
-
-
-/*_______________________ Question no 1 ______________________
-
+/*_______________________ Question no 34 ______________________
+ Replace a character
+Question:
+Replace the first - with a / in this date string:
+js
+Copy
+Edit
+"2025-07-12"
+Expected Output:
+"2025/07-12"
 _________________________ Answer ____________________________*/
+// let dt = '2025-07-12';
+// // let ans = dt.replace('-','/');
+// let ans = dt.replaceAll('-','/');
+// console.log(ans);
 
-
-
-
-/*_______________________ Question no 1 ______________________
-
+/*_______________________ Question no 35 ______________________
+Replace all spaces with hyphens
+Question:
+Use replaceAll to convert a sentence into URL-friendly format:
+"I love frontend web development"
+Expected Output:
+"I-love-frontend-web-development"
 _________________________ Answer ____________________________*/
+// let str = 'I love frontend web development';
+// let ans = str.replaceAll(' ','-');
+// console.log(ans)
 
-
-
-
-/*_______________________ Question no 1 ______________________
-
+/*_______________________ Question no 36 ______________________
+ Access an Element
+Question:
+Print only the 2nd item from this array:
+let colors = ["red", "green", "blue", "yellow"];
 _________________________ Answer ____________________________*/
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
+// let colors = ['red','green','blue','yellow'];
+// console.log(colors[1]);
+/*_______________________ Question no 37 ______________________
+ Change an Element
+Question:
+Change "banana" to "orange" in this array:
+let fruits = ["apple", "banana", "mango"];
 _________________________ Answer ____________________________*/
+// let fruits = ['apple','banana','mango'];
+// fruits.splice(1,1,'orange');
+// console.log(fruits)
+/*_______________________ Question no 38 ______________________
+Add a New Element
+Question:
+Add "grapes" to the end of this array using .push():
+let fruits = ["apple", "banana"];
+_________________________ Answer ____________________________*/
+// let fruits = ['apple','banana'];
+//    let out = fruits.push('grapes');
+//    console.log(fruits);
+//    console.log(out)
 
+/*_______________________ Question no 39 ______________________
+Remove the Last Element
+Question:
+Remove the last element from this array using .pop():
+let items = ["pen", "pencil", "eraser", "sharpener"];
+_________________________ Answer ____________________________*/
+// let items = ['pen','pencil','eraser','sharpener'];
+// let out = items.pop();
+// console.log(items);
+// console.log(out);
 
-/*_______________________ Question no 1 ______________________
-
+/*_______________________ Question no 40 ______________________
+ Loop and Print All Items
+Question:
+Use a for loop to print each item in this array:
+let languages = ["HTML", "CSS", "JavaScript"];
 _________________________ Answer ____________________________*/ 
-
-
-
-/*_______________________ Question no 1 ______________________
-
+// let languages = ['html','css','js'];
+// console.log(languages);
+// for(let i = 0; i <= languages.length;i++){console.log(languages[i])};
+/*_______________________ Question no 41 ______________________
+Use .indexOf()
+Question:
+Find the index of "CSS" in the following array:
+let tools = ["HTML", "CSS", "JavaScript", "Bootstrap"];
 _________________________ Answer ____________________________*/
-
-
-
-/*_______________________ Question no 1 ______________________
-
+// let tools = ['html','css','js','bootstrap'];
+// let ans = tools.indexOf('css');
+// console.log(ans)
+/*_______________________ Question no 42 ______________________
+Remove "green" from the array using .splice():
+let colors = ["red", "green", "blue"];
 _________________________ Answer ____________________________*/
+// let colors = ['red','green','blue'];
+// let rem = colors.splice(1,1);
+// console.log(colors);
+// console.log(rem)
 
+// let colors = ['red','green','blue'];
+// let rem = colors.splice(1,0,'pink');
+// console.log(colors);
+// console.log(rem)
+/*_______________________ Question no 43 ______________________
+Check if "React" is in the array:
+let frameworks = ["Vue", "Angular", "React", "Svelte"];
+________________________ Answer ____________________________*/
+// let frameworks = ['Vue','Angular','React','Svelte'];
+// let ans = frameworks.includes('React');
+// console.log(ans)
 
-
-
-
-/*_______________________ Question no 1 ______________________
-
+/*_______________________ Question no 44 ______________________
+shift(),unshift()
 _________________________ Answer ____________________________*/
-
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
+// let colors = ['red','green','blue'];
+// // let  a = colors.shift();
+// let a =colors.unshift('pink');
+// console.log(colors);
+// console.log(a);
 
 /*_______________________ Question no 1 ______________________
 
