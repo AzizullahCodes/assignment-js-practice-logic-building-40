@@ -436,7 +436,7 @@ _________________________ Answer ____________________________*/
 
 
 /*_______________________ Question no 21 ______________________
-
+determine the number of uppercase and lowercase letters in string
 _________________________ Answer ____________________________*/
 
 // let string = 'AZIZ';
@@ -450,50 +450,126 @@ _________________________ Answer ____________________________*/
 // }
 // console.log(uppercase);
 // console.log(lowercase)
-/*_______________________ Question no 1 ______________________
+/*_______________________ Question no 22 ______________________
+ Round Multiple Values in an Array
+Question:
+Given an array of decimal numbers, use Math.round() to round all values and return a new array with rounded numbers.
+
+Input Example: [1.2, 2.5, 3.8, 4.1]
+Expected Output: [1, 3, 4, 4]
+
 
 _________________________ Answer ____________________________*/
+// var array = [1.2,2.5,3.8,4.1];
+// console.log(array);
+// let result = Math.round(array);
+// console.log(result);
+// for(let i = 0; i < array.length; i++){console.log(Math.round(array[i]))}
 
-
-
-
-/*_______________________ Question no 1 ______________________
-
+/*_______________________ Question no 23 ______________________
+Use a for loop to print numbers from 1 to 10 and their square roots.
+Expected Output:
+1 → 1  
+2 → 1.414  
+3 → 1.732  
+...  
+10 → 3.162
 _________________________ Answer ____________________________*/
+// for(let i = 1 ; i<=10;i++){let result = i + ': '+Math.sqrt(i);
+//     console.log(result)
+// }
+// let num = 9;
+// let ans = Math.sqrt(num);
+// console.log(ans)
 
 
+/*_______________________ Question no 24 ______________________
+Number Sign Checker
+Question:
+Write a function that checks whether a number is negative. If yes, convert it to positive using Math.abs() and log the result.
 
-
-/*_______________________ Question no 1 ______________________
-
+Input Example: -20
+Expected Output: It was negative. Converted to: 20
 _________________________ Answer ____________________________*/
+// abs();
+// function abs(){let num = -20;
+//     if(num < 0){let a = Math.abs(num);
+//         console.log(a)
+//     }
+//     else{console.log('num is already positive')}
+// }
 
-
-
-
-/*_______________________ Question no 1 ______________________
-
+/*_______________________ Question no 25 ______________________
+math.ceil and math.floor 
 _________________________ Answer ____________________________*/
+// let num = 2.76;
+// // let ans = Math.ceil(num);
+// let ans = Math.floor(num)
+// console.log(ans)
 
+/*_______________________ Question no 26 ______________________
+Maximum in an Array
+Question:
+Given an array of numbers, find the maximum number using Math.max() with the
+ spread operator (...).
 
-
-
-
-/*_______________________ Question no 1 ______________________
-
+Input Example: [5, 8, 12, 3, 25, 7]
+Expected Output: Max number is 25
 _________________________ Answer ____________________________*/
+// maxi()
+// function maxi(){let array = [5,8,12,3,25,7];
+//     let max = Math.max(...array);
+//     console.log(max)
+// }
 
+/*_______________________ Question no 27 ______________________
+Random Color Generator
+Question:
+Create a function that randomly picks one color from an array of colors
+ using Math.random() and logs it.
 
-/*_______________________ Question no 1 ______________________
+Example Array: ["red", "blue", "green", "yellow", "purple"]
+Expected Output:
 
+Random color: green
 _________________________ Answer ____________________________*/ 
+// coloring();
+// function coloring(){let array = [
+//   "red", "blue", "green", "orange", "purple",
+//   "pink", "yellow", "brown", "black", "white",
+//   "gray", "teal", "navy", "maroon", "lime",
+//   "olive", "aqua", "cyan", "magenta", "gold"];
+//     let random  = Math.random()*array.length;
+//         random = Math.floor(random);
+//         let ans = array[random];
+//     document.getElementById('display').innerHTML = ans;
+//     let pt = document.getElementById('para');
+   
+//     pt.style.background = ans
+// }
 
 
-
-/*_______________________ Question no 1 ______________________
-
+/*_______________________ Question no 28 ______________________
+5: Random OTP Generator (4 Digits)
+Question:
+Generate a random 4-digit OTP (One Time Password) using Math.random().
+Expected Output Example:
+Your OTP is: 4827
 _________________________ Answer ____________________________*/
-
+// let num1 = (Math.floor(Math.random()*9))+1;
+//     num1 = num1.toString();
+// console.log(num1);
+// let num2 = (Math.floor(Math.random()*9))+1;
+// num2 = num2.toString();
+// console.log(num2)
+// let num3 = (Math.floor(Math.random()*9))+1;
+// num3 = num3.toString();
+// console.log(num3)
+// let num4 = (Math.floor(Math.random()*9))+1;
+// num4 = num4.toString();
+// console.log(num4);
+// let Password = num1+num2+num3+num4;
+// console.log(Password)
 
 
 /*_______________________ Question no 1 ______________________
